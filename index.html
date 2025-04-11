@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Add inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RefugeeConnect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-inter">
+
+  <header class="flex justify-between items-center p-6 bg-white shadow-md">
+    <h1 class="text-2xl font-bold">RefugeeConnect</h1>
+    <nav class="space-x-6">
+      <a href="#features" class="hover:text-blue-500">Features</a>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </header>
+
+  <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+    <canvas id="bg-canvas"></canvas>
+    <div class="content-overlay px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Refugees Through Technology</h2>
+      <p class="text-lg max-w-2xl mx-auto">Multilingual AI guidance for jobs, healthcare, housing & more – all in one place.</p>
+    </div>
+  </section>
+
+  <section id="features" class="p-10 bg-white text-gray-800">
+    <h3 class="text-3xl font-semibold text-center mb-10">Key Features</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="feature-card">
+        <div class="text-4xl mb-4">🌍</div>
+        <h4 class="text-xl font-semibold mb-2">Multilingual Support</h4>
+        <p>Provides guidance in native languages, breaking the communication barrier.</p>
+      </div>
+      <div class="feature-card">
+        <div class="text-4xl mb-4">🏠</div>
+        <h4 class="text-xl font-semibold mb-2">Job & Housing Matching</h4>
+        <p>Helps connect refugees to local jobs and accommodation opportunities.</p>
+      </div>
+      <div class="feature-card">
+        <div class="text-4xl mb-4">🩺</div>
+        <h4 class="text-xl font-semibold mb-2">Healthcare Access</h4>
+        <p>Locates nearby clinics and explains local healthcare systems and insurance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="text-4xl mb-4">📘</div>
+        <h4 class="text-xl font-semibold mb-2">Cultural Orientation</h4>
+        <p>Offers tips and local laws to help refugees integrate and stay safe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="p-10 bg-gray-100">
+    <h3 class="text-3xl font-semibold text-center mb-6">About the Project</h3>
+    <p class="max-w-3xl mx-auto text-center text-lg">
+      Built in 48 hours during a hackathon, this platform aims to make refugee integration smoother through smart assistance, available via a mobile-first web app.
+    </p>
+  </section>
+
+  <footer id="contact" class="bg-white p-6 text-center border-t">
+    <p>Contact us at <a href="mailto:team@refugeeconnect.org" class="text-blue-500">team@refugeeconnect.org</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
