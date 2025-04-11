@@ -1,4 +1,3 @@
-
 /* Add to the top of style.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -10,20 +9,27 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100%;
 }
 
-canvas {
+/* === ADD THIS: Three.js canvas positioning === */
+canvas#bg-canvas {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 
+/* === ADD THIS: Text/content overlay on top of canvas === */
 .content-overlay {
   position: relative;
   z-index: 1;
+  color: #111; /* Optional: ensures text stays visible on light backgrounds */
 }
 
+/* === EXISTING FEATURE CARD STYLES === */
 .feature-card {
   background-color: #f9fafb;
   padding: 1.5rem;
