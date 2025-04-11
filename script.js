@@ -83,3 +83,15 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+window.addEventListener('DOMContentLoaded', () => {
+  const logo = document.querySelector('.brand-logo');
+  logo.style.opacity = '0';
+  logo.style.transform = 'scale(0.8)';
+
+  setTimeout(() => {
+    logo.style.transition = 'all 0.8s ease-in-out';
+    logo.style.opacity = '1';
+    logo.style.transform = 'scale(1)';
+  }, 100); // slight delay for effect
+});
+
