@@ -41,3 +41,23 @@ canvas#bg-canvas {
 .feature-card:hover {
   box-shadow: 0 10px 15px rgba(0,0,0,0.15);
 }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+
+.brand-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #1e40af, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #3b82f6, 0 0 20px #06b6d4;
+  }
+  50% {
+    text-shadow: 0 0 20px #1e40af, 0 0 30px #3b82f6;
+  }
+}
